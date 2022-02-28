@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<app-child
+  [childMessage]="'This is message from parent'"
+  (messageEvent)="receiveFromChild($event)"></app-child>
