@@ -1,7 +1,25 @@
-<div>welcome to angular</div>
+<div>pipe</div>
+{{ todaysDate | date : 'EEEE MMMM d' | uppercase }}
+{{ 'world' | greetingsPipe}}
+
+
 <div>
   <h1>list of the application</h1>
   <p>{{ title }}</p>
 </div>
 
 <app-parent></app-parent>
+
+<div>test ng content</div>
+<app-child>
+  <h3 question>Is this ng-content ?</h3>
+  <p answer>Yeah this it is.</p>
+</app-child>
+
+
+<div>
+  custom directive test
+  <div [appHighlight]="'red'">
+    This is test directive
+  </div>
+</div>

@@ -1,0 +1,20 @@
+:host {
+  display: block;
+  border: 2px solid red;
+}
+
+:host(.active) {
+  display: block;
+  border: 2px solid green;
+}
+
+:host(.deactive) {
+  display: block;
+  border: 2px solid gray;
+}
+
+:host-context(.theme-light) {
+  h2 {
+  color: blue;
+  }
+}

@@ -9,6 +9,8 @@ export class AppComponent implements OnInit, OnDestroy {
   
   title = 'angular-video-tuts';
 
+  todaysDate = new Date();
+
   ngOnInit(): void {
 
   }

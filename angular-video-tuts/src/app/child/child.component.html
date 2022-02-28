@@ -1,3 +1,30 @@
 <p>child works!</p>
-{{ childMessage }}
+<h2>{{ childMessage }}</h2>
+<div>
+  <ng-content select="[question]"></ng-content>
+  <ng-content [answer]></ng-content>
+</div>
 <button (click)="sendToParent()">Send message to parent</button>
+
+<div>
+  <h2>template statement</h2>
+  <p *ngIf="showText">{{ text }}</p>
+  <button (click)="toggleText()">toggle text</button>
+</div>
+
+<div>
+  <div [ngSwitch]="name">
+    <div *ngSwitchCase="'John'">
+      <h2>Dad</h2>
+    </div>
+    <div *ngSwitchCase="'C'">
+      <h2>Mum</h2>
+    </div>
+    <div *ngSwitchCase="'han'">
+      <h2>ME</h2>
+    </div>
+    <div *ngSwitchDefault>
+      <h2>Unknown</h2>
+    </div>
+  </div>
+</div>

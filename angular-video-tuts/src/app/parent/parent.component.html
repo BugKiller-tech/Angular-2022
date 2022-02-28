@@ -1,4 +1,7 @@
 <p>parent works!</p>
-<app-child
-  [childMessage]="'This is message from parent'"
-  (messageEvent)="receiveFromChild($event)"></app-child>
+<div class="theme-light">
+  <app-child
+    [childMessage]="'This is message from parent'"
+    (messageEvent)="receiveFromChild($event)"
+    class="active"></app-child>
+</div>
