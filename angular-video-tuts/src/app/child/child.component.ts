@@ -7,6 +7,8 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
+  public message = "message from child";
+
   @Input()
   childMessage: string = "Default message from child";
 
